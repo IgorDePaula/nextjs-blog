@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
+    "@aws-amplify/cli": "^4.50.0",
     "axios": "^0.21.1",
     "next": "^10.0.0",
     "react": "17.0.1",

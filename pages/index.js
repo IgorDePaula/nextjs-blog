@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-<Link  href={'/about'} prefetch={true}>
+<Link  href={'/about'} >
     Sobre
 </Link>
         <p className="description">

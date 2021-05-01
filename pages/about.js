@@ -1,6 +1,13 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import axios from "axios";
-export default function About({repos}){
+
+
+export default function About(){
+    const [repos, setRepos] = useState([])
+    useEffect(async ()=>{
+        const {data} = await axios.get('https://api.github.com/users/IgorDePaula/repos') || []
+        setRepos(data)
+    },[])
     return <div>
         About
        <ul>
